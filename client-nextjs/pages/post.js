@@ -2,16 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
+import Layout from '../components/PageLayout';
 
 
 const PostPage = ({ thisPost }) => {
   return (
-    <React.Fragment>
+    <Layout>
       <h1>
         {thisPost[0].title.rendered}
       </h1>
       <div className="mdStyle" dangerouslySetInnerHTML={{ __html: thisPost[0].content.rendered }} />
-    </React.Fragment>);
+    </Layout>);
 };
 
 PostPage.propTypes = {

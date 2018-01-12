@@ -3,15 +3,13 @@ import PropTypes from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
 import BlogList from '../components/BlogList';
+import Layout from '../components/PageLayout';
 
 
 const HomePage = ({ recentPosts }) =>
-  <React.Fragment>
-    <h1>
-      YOUR OWN NEXTJS BLOG WITH WORDPRESS
-    </h1>
+  <Layout>
     <BlogList recentPosts={recentPosts} />
-  </React.Fragment>;
+  </Layout>;
 
 
 HomePage.propTypes = {
