@@ -7,7 +7,7 @@ import Layout from '../components/PageLayout';
 
 const PostPage = ({ thisPost }) => {
   return (
-    <Layout>
+    <Layout title={thisPost[0].title.rendered}>
       <h1>
         {thisPost[0].title.rendered}
       </h1>
