@@ -1,7 +1,0 @@
-{
-  "private": true,
-  "name": "wordpress-nextjs",
-  "workspaces": [
-    "packages/*"
-  ]
-}

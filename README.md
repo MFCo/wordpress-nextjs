@@ -12,8 +12,8 @@ database, the database will count with a volume just for persistence.
 
 ### Client
 
-* `yarn dev` in development mode, by default will run on localhost:9056, and will hit localhost:8000
+* `yarn dev` in development mode, by default frontend will run on localhost:9056, and it will hit localhost:8000
 
 ### Server
 
-* `docker-compose up` will run the Wordpress server, by default will run on localhost:8000
+* `docker-compose up` will run the Wordpress server, by default server will run on localhost:8000
