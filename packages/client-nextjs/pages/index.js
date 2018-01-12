@@ -2,17 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import fetch from 'isomorphic-unfetch';
 
-const HomePage = ({ recentPosts }) => {
-  console.log(recentPosts);
-  return (
-    <div>
-      HI!
-    </div>
-  );
-};
+import BlogList from '../components/BlogList';
+
+
+const HomePage = ({ recentPosts }) =>
+  <React.Fragment>
+    <h1>
+      YOUR OWN NEXTJS BLOG WITH WORDPRESS
+    </h1>
+    <BlogList recentPosts={recentPosts} />
+  </React.Fragment>;
+
 
 HomePage.propTypes = {
-  recentPosts: PropTypes.any
+  recentPosts: PropTypes.array
 };
 
 HomePage.getInitialProps = async function () {
